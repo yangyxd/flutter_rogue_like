@@ -1,0 +1,102 @@
+name: roguelike
+description: 拾荒者小游戏
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.5 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  # 国际化多语言
+  intl: "^0.17.0"
+
+  # 游戏引擎
+  flame: ^1.2.0
+
+  # 全局事件总线
+  event_bus: ^2.0.0
+
+  # 权限管理
+  permission_handler: ^8.3.0
+
+  # UUID
+  uuid: ^3.0.4
+
+  # 桌面应用窗口管理
+  window_manager: ^0.2.5
+
+  # Toast提示
+  oktoast: ^3.1.5
+
+  # 网络图像显示
+  cached_network_image: ^3.2.0
+
+  # 网络通讯
+  http: ^0.13.4
+  dio: ^4.0.6
+
+  # 数据存储
+  shared_preferences: ^2.0.15
+
+  # 获取主机平台文件系统上的常用位置
+  path_provider: ^2.0.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/
+    - assets/imgs/
+
+  fonts:
+    - family: mono
+      fonts:
+        - asset: fonts/DroidSansMono.ttf
+
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto/Roboto-Thin.ttf
+          weight: 100
+        - asset: fonts/Roboto/Roboto-Light.ttf
+          weight: 300
+        - asset: fonts/Roboto/Roboto-Regular.ttf
+          weight: 400
+        - asset: fonts/Roboto/Roboto-Medium.ttf
+          weight: 500
+        - asset: fonts/Roboto/Roboto-Bold.ttf
+          weight: 700
+        - asset: fonts/Roboto/Roboto-Black.ttf
+          weight: 900
